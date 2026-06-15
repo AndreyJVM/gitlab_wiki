@@ -1,30 +1,10 @@
-### GitLab CE
+### Running GitLab CE with docker
 
-### Install docker and docker compose (Ubuntu)
-
-```shell
-sudo apt install curl -y
-```
-
-```shell
-curl -fsSL https://get.docker.com -o get-docker.sh
-```
-
-```shell
-sudo chmod +x get-docker.sh
-```
-
-```shell
-sudo ./get-docker.sh
-```
+### Install docker
 
 ```shell
 service docker status 
 # active (running)
-```
-
-```shell
-sudo apt install docker-compose -y
 ```
 
 ### Docker compose
@@ -44,3 +24,5 @@ nano docker-compose.yml
 ```yaml
 docker compose up -d
 ```
+
+### Docker swarm
