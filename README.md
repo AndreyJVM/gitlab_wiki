@@ -24,5 +24,10 @@ touch swarm-gitlab.yml
 ```
 
 ```shell
+# change the default settings in these files
+nano /var/lib/docker/volume/gitlab/_data/gitlab.rb
+```
+
+```shell
 docker swarm deploy -c swarm-gitlab.yml gitlab
 ```
