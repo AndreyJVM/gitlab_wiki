@@ -8,21 +8,21 @@ service docker status
 ```
 
 ### Docker compose
-
 ```shell
-mkdir docker_gitlab_service; cd docker_gitlab_service
+# Copy the text and change the default settings in these files
+touch .env compose.yml
 ```
 
 ```shell
-nano .env
-```
-
-```shell
-nano docker-compose.yml
-```
-
-```yaml
 docker compose up -d
 ```
 
 ### Docker swarm
+```shell
+# Copy the text and change the default settings in these file
+touch swarm-gitlab.yml
+```
+
+```shell
+docker swarm deploy -c swarm-gitlab.yml gitlab
+```
