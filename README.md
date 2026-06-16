@@ -31,3 +31,9 @@ nano /var/lib/docker/volume/gitlab/_data/gitlab.rb
 ```shell
 docker swarm deploy -c swarm-gitlab.yml gitlab
 ```
+
+### Get default pass for root user
+```shell
+docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
+#d23jd23d2j3dj2j&!dddd#dwdawda2@das
+```
